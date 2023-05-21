@@ -2,7 +2,7 @@
 
 :root {
   --main-color: #14ff20;
-  --dark-main: #0d7377;
+  --dark-main: #17a022;
   --main-dark: #212121;
   --light-grey: #323232;
 }
@@ -29,6 +29,40 @@ html {
 body {
   background-color: var(--main-dark);
   padding-left: 30rem;
+}
+
+section {
+  padding: 1rem 5%;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0.8rem 3rem;
+  background: var(--main-color);
+  color: var(--main-dark);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background: var(--dark-main);
+  color: whitesmoke;
+}
+
+.heading {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
 }
 
 header {
@@ -79,6 +113,60 @@ header .follow a {
 
 header .follow a:hover {
   color: #1da1f2;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+}
+
+.home .content .greet {
+  font-size: 2rem;
+  color: var(--dark-main);
+}
+
+.home .content h3 {
+  font-size: 4.2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.home .content .info {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  padding: 0.5rem 0;
+}
+
+.home .content .text {
+  font-size: 1.7rem;
+  color: rgb(180, 180, 180);
+  padding: 0.5rem 0;
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: var(--light-grey);
 }
 
 #menu-bars {
