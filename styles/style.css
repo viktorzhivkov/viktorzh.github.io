@@ -49,6 +49,7 @@ section {
 
 .btn:hover {
   background: var(--dark-main);
+  box-shadow: 0 0rem 0.6rem var(--dark-main);
   color: whitesmoke;
 }
 
@@ -94,13 +95,14 @@ header .logo span {
 
 header .navbar a {
   display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: whitesmoke;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 header .navbar a:hover {
   letter-spacing: 0.3rem;
+  font-size: 3rem;
   color: var(--main-color);
 }
 
@@ -120,6 +122,7 @@ header .follow a.dev:hover {
 
 header .follow a:hover {
   color: #1da1f2;
+  font-size: 4rem;
 }
 
 .home {
@@ -149,10 +152,6 @@ header .follow a:hover {
   border-radius: 12px;
 }
 
-.home .content a:hover {
-  box-shadow: 0 0rem 0.5rem var(--dark-main);
-}
-
 .home .content .greet {
   font-size: 2rem;
   color: var(--dark-main);
@@ -178,10 +177,10 @@ header .follow a:hover {
 }
 
 .home .content .info {
-  font-size: 2.5rem;
-  color: whitesmoke;
+  font-size: 2.7rem;
+  color: azure;
   padding: 0.5rem 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .home .content .text {
@@ -347,6 +346,18 @@ header .follow a:hover {
   font-size: 1.6rem;
 }
 
+.contact hr {
+  height: 2px;
+  width: 100%;
+  background-color: var(--dark-main);
+  box-shadow: 0 0rem 1rem var(--main-color);
+  margin-top: 2rem;
+}
+
+.contact h1 {
+  margin-bottom: 1rem;
+}
+
 .contact .icons-container {
   display: flex;
   gap: 1.5rem;
@@ -360,7 +371,7 @@ header .follow a:hover {
   padding: 2rem;
   background-color: var(--light-grey);
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
 .contact .icons-container .icons i {
@@ -388,16 +399,26 @@ header .follow a:hover {
 
 .contact .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
   gap: 1.5rem;
-  width: 60%;
+  width: 100%;
+}
+
+.contact .row h3 {
+  font-size: 3rem;
+}
+
+.contact .row span {
+  color: var(--main-color);
 }
 
 .contact .row form {
   flex: 1 1 55rem;
   background-color: var(--light-grey);
   padding: 0 2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
 
@@ -418,7 +439,7 @@ header .follow a:hover {
 }
 
 .contact .row form textarea {
-  height: 20rem;
+  height: 25rem;
   resize: none;
 }
 
@@ -428,10 +449,17 @@ header .follow a:hover {
   border-radius: 10px;
 }
 
-/* .contact .row form .box::placeholder,
-.contact .row form textarea::placeholder {
-  text-transform: capitalize;
-} */
+footer {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  padding: 2.5rem;
+  text-align: center;
+  color: azure;
+}
+
+footer span a {
+  color: var(--dark-main);
+}
 
 #menu-bars {
   position: fixed;
