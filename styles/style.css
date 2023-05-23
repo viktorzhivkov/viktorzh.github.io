@@ -128,7 +128,7 @@ header .follow a:hover {
 .home .image img {
   width: 100%;
   border: 1rem solid var(--light-grey);
-  box-shadow: 0 0.1rem 1rem grey;
+  box-shadow: 0 0.1rem 1.3rem grey;
   border-radius: 15%;
 }
 
@@ -151,6 +151,7 @@ header .follow a:hover {
   height: 3px;
   width: 90%;
   background-color: var(--light-grey);
+  box-shadow: 0 0rem 1rem var(--light-grey);
   margin-bottom: 1rem;
 }
 
@@ -207,6 +208,8 @@ header .follow a:hover {
 
 .about .row-1 .content p {
   color: rgb(180, 180, 180);
+  width: 86%;
+  margin-bottom: 0.4rem;
   font-size: 1.8rem;
   padding: 0.5rem 0;
 }
@@ -228,8 +231,9 @@ header .follow a:hover {
 
 .about .row-1 .content hr {
   height: 2px;
-  width: 90%;
+  width: 83%;
   background-color: var(--dark-main);
+  box-shadow: 0 0rem 1rem var(--dark-main);
   margin-bottom: 1rem;
 }
 
@@ -262,7 +266,7 @@ header .follow a:hover {
   width: 100%;
   background-color: var(--light-grey);
   overflow: hidden;
-  height: 1rem;
+  height: 1.1rem;
   border-radius: 50rem;
   box-shadow: 0 0 0.7rem var(--main-color);
 }
@@ -295,6 +299,35 @@ header .follow a:hover {
 
 .about .row-2 .skills .progress:nth-child(6) .bar span {
   width: 40%;
+}
+
+.about .row-2 .box-container {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about .row-2 .box-container .box {
+  flex: 1 1 15rem;
+  background-color: var(--light-grey);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(23, 160, 34, 0.2);
+}
+
+.about .row-2 .box-container h3 {
+  font-size: 1.5rem;
+}
+
+.about .row-2 .box-container .box h3 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+.about .row-2 .box-container .box p {
+  color: whitesmoke;
+  font-size: 1.5rem;
 }
 
 #menu-bars {
