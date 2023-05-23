@@ -100,14 +100,22 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   color: var(--main-color);
 }
 
 header .follow a {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: whitesmoke;
   margin: 0.7rem;
+}
+
+header .follow a.thm:hover {
+  color: var(--main-color);
+}
+
+header .follow a.dev:hover {
+  color: var(--dark-main);
 }
 
 header .follow a:hover {
@@ -126,7 +134,7 @@ header .follow a:hover {
 }
 
 .home .image img {
-  width: 100%;
+  width: 90%;
   border: 1rem solid var(--light-grey);
   box-shadow: 0 0.1rem 1.3rem grey;
   border-radius: 15%;
@@ -230,6 +238,11 @@ header .follow a:hover {
   padding: 0.5rem 0;
 }
 
+.about .row-1 .content .box-container .box a {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+}
+
 .about .row-1 .content .box-container .box {
   flex: 1 1 20rem;
 }
@@ -249,7 +262,7 @@ header .follow a:hover {
 .about .row-2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 5rem;
   align-items: center;
 }
 
@@ -321,7 +334,7 @@ header .follow a:hover {
   background-color: var(--light-grey);
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem rgb(23, 160, 34, 0.2);
+  box-shadow: 0 0.5rem 1.5rem rgb(0, 90, 0, 0.4);
 }
 
 .about .row-2 .box-container .box h3 {
@@ -332,6 +345,44 @@ header .follow a:hover {
 .about .row-2 .box-container .box p {
   color: whitesmoke;
   font-size: 1.6rem;
+}
+
+.contact .icons-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact .icons-container .icons {
+  flex: 1 1 20rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--light-grey);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.contact .icons-container .icons i {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  background-color: var(--main-color);
+  color: var(--main-dark);
+  border-radius: 50%;
+}
+
+.contact .icons-container .icons h3 {
+  font-size: 2rem;
+  color: azure;
+  padding: 0.5rem 0;
+}
+
+.contact .icons-container .icons p {
+  font-size: 1.7rem;
+  color: whitesmoke;
+  padding: 0.5rem 0;
 }
 
 #menu-bars {
