@@ -351,6 +351,7 @@ header .follow a:hover {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 
 .contact .icons-container .icons {
@@ -384,6 +385,53 @@ header .follow a:hover {
   color: whitesmoke;
   padding: 0.5rem 0;
 }
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 60%;
+}
+
+.contact .row form {
+  flex: 1 1 55rem;
+  background-color: var(--light-grey);
+  padding: 0 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.contact .row form .box,
+.contact .row form textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+  border-bottom: 0.5rem solid var(--dark-main);
+  border-radius: 5px;
+  text-transform: none;
+  font-size: 1.7rem;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus {
+  border-color: var(--main-color);
+}
+
+.contact .row form textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.contact .row form .btn {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+/* .contact .row form .box::placeholder,
+.contact .row form textarea::placeholder {
+  text-transform: capitalize;
+} */
 
 #menu-bars {
   position: fixed;
