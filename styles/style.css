@@ -242,7 +242,6 @@ header .follow a:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
-  width: 67%;
 }
 
 .about .row-2 .skills {
