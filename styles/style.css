@@ -438,6 +438,11 @@ header .follow a:hover {
   border-color: var(--main-color);
 }
 
+.contact form .box {
+  background: var(--main-dark);
+  color: var(--main-color);
+}
+
 .contact .row form textarea {
   height: 25rem;
   resize: none;
